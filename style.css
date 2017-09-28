@@ -1,0 +1,77 @@
+*{margin:0;padding: 0;}
+
+.Mainmenu{
+	background-color: green;
+	min-height: 55px;
+}
+.Mainmenu ul{
+	list-style-type: none;
+
+}
+.Mainmenu ul li{
+	float: left;
+	border left: 1px solid lightgreen;
+	border-right: 1px solid darkgreen;
+	position: relative;
+}
+.Mainmenu ul li:first-child{border-left: none;}
+.Mainmenu ul li:last-child{border-right: none;}
+.Mainmenu ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 17px 80px;
+}
+.Mainmenu ul li a:hover{
+	background-color: darkgreen;
+}
+
+/*drop down css*/
+
+.Mainmenu ul li ul{
+	background-color: green;
+	position: absolute;
+	left:-999999px;
+ }
+ .Mainmenu ul li:hover ul{left: 0px;}
+.Mainmenu ul li ul li{ 
+	float: none;
+	border-left:none;
+    border-right:none;
+    border-top: 1px solid lightgreen;
+    border-bottom: 1px solid darkgreen;
+    width: 210px;
+}
+.Mainmenu ul li ul li:first-child{
+	border-top: none;
+}
+.Mainmenu ul li ul li:last-child{
+	border-bottom: none;
+}
+.Mainmenu ul li ul li a{
+	padding: 17px 50px;
+}
+.Mainmenu ul li ul li a:hover{}
+
+
+.image_gallery{
+width: 300px;
+border:1px solid black;
+height: 350px;
+margin:10px 59px;
+float: left;
+}
+.image_gallery img{
+	height: 276px;
+	width: 245px;
+	margin: 34px 30px;
+	opacity: 0.4;
+	transition: 1s;
+	
+}
+.image_gallery img:hover{
+	opacity: 1;
+	transform: scale(1.1);
+	transform: rotate(360deg);
+}
+.image_gallery p{text-align: center;}
